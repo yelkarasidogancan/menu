@@ -30,8 +30,6 @@ input {
 .row .col {
   flex: 1;
 }
-.row .col:last-child {
-}
 .tabs {
   overflow: hidden;
 }
