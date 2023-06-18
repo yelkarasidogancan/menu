@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+  padding: 5em 6em;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.row {
+  display: flex;
+}
+.row .col {
+  flex: 1;
+}
+.row .col:last-child {
+}
+.tabs {
+  overflow: hidden;
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.tab label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.tab-label:hover {
+  background: darken(#2c3e50, 10%);
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.8s;
+}
+.tab-content {
+  max-height: 0;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.8s;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content {
+  width: 50%;
+  padding: 20px;
+  text-align: justify;
+}
+.image {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: darken(#2c3e50, 10%);
+}
+input:checked + .tab-label {
+  background: darken(#2c3e50, 10%);
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 400vh;
+  opacity: 1;
+}
+@media screen and (max-width: 450px) {
+  body {
+    padding: 5em 1em;
+  }
+  .content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 5em 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 5em 3em;
+  }
+  .content {
+    width: 33%;
+  }
+}
