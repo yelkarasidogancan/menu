@@ -4,142 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    .accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-    
-    .active, .accordion:hover {
-      background-color: #ccc;
-    }
-    
-    .accordion:after {
-      content: '\002B';
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-    
-    .active:after {
-      content: "\2212";
-    }
-    .panel-group{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .panel {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 0 18px;
-      background-color: white;
-      height: 0;
-      overflow: hidden;
-      transition: height 0.2s ease-out;
 
-    }
-
-    img{
-        width: 300px;
-        height: 300px;
-        border-radius: 30px;
-    }
-    .info{
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    </style>
-    </head>
-    <body>
-    
-    <h2>Accordion with symbols</h2>
-    <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
-    
-    <button class="accordion">Section 1</button>
-    <div class="panel-group">
-      <div class="panel">
-        <div class="image">
-            <img  src="./images/png.png" alt="">
-        </div>
-        <div class="info">
-            <h1>Dogancan</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-        </div>
-      </div>
-      <div class="panel">
-        <div class="image">
-            <img  src="./images/png.png" alt="">
-        </div>
-        <div class="info">
-            <h1>Dogancan</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-        </div>
-      </div>
-      <div class="panel">
-        <div class="image">
-            <img  src="./images/png.png" alt="">
-        </div>
-        <div class="info">
-            <h1>Dogancan</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-        </div>
-      </div>
-      <div class="panel">
-        <div class="image">
-            <img  src="./images/png.png" alt="">
-        </div>
-        <div class="info">
-            <h1>Dogancan</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-        </div>
-      </div>
-    </div>
-    
-    <button class="accordion">Section 2</button>
-    <div class="panel-group">
-           <div class="panel">
-            <div class="image">
-                <img  src="./images/png.png" alt="">
-            </div>
-            <div class="info">
-                <h1>Dogancan</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+  <body>
+    <div class="row">
+      <div class="col">
+        <div class="tabs">
+          <div class="tab">
+            <input type="checkbox" id="chck1" />
+            <label class="tab-label" for="chck1">Yemekler</label>
+            <div class="tab-content">
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
             </div>
           </div>
+          <div class="tab">
+            <input type="checkbox" id="chck2" />
+            <label class="tab-label" for="chck2">Tatlılar</label>
+            <div class="tab-content">
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" id="chck3" />
+            <label class="tab-label" for="chck3">İçecekler</label>
+            <div class="tab-content">
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+              <div class="content">
+                <div class="image">
+                  <img src="./images/png.png" alt="" />
+                </div>
+                <h2>Kuzu Şiş</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <script>
-    var acc = document.getElementsByClassName("accordion");
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panelGroup = this.nextElementSibling;
-        var panels = panelGroup.getElementsByClassName('panel');
-        for (var j = 0; j < panels.length; j++) {
-          var panel = panels[j];
-          if (panel.style.height) {
-            panel.style.height = null;
-          } else {
-            panel.style.height = 300 + "px";
-          }
-        }
-      });
-    }
-    </script>
-    
-    </body>
+  </body>
 </html>
